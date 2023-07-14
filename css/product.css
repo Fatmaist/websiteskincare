@@ -1,0 +1,634 @@
+:root{
+    --pink:#e84393;
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding:2rem 9%;
+    top: 100px;
+    position: relative;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#333;
+    padding:1rem;
+    margin:2rem 0;
+    background:rgba(255, 51, 153,.05);
+}
+
+.heading span{
+    color:var(--pink);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#333;
+    color:#fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:var(--pink);
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#fff;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:#666;
+}
+
+header .navbar a:hover{
+    color:var(--pink);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color:#333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+.judul{
+    font-family: 'Asap';
+    text-align: left;
+    width: 375px;
+    height: 50px;
+    top: 223px;
+    left: 147px;
+    font-weight: 500;
+    font-size: 36px;
+
+   
+}
+
+.judul span{
+    color:#88BEF5;
+    font-family: 'Asap';
+}
+
+.heading span{
+    color:var(--pink);
+    font-family: 'oranienbaum';
+    top: 300px;
+}
+
+.produk {
+    font-family: 'Asap';
+    text-align: left;
+    width: 375px;
+    height: 25px;
+    margin-top: 100px;
+    left: 5px;
+    font-weight: 500;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 41.26px;
+    position: absolute;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    background: lightblue;
+    background: radial-gradient(white 30%, lightblue 70%);
+}
+
+.fa-star,
+.fa-star-half{
+    color: yellowgreen;
+    padding: 3% 0;
+}
+
+#cart_count{
+    text-align: center;
+    padding: 0 0.9rem 0.1rem 0.9rem;
+    border-radius: 3rem;
+}
+
+.catalog {
+    margin-top: 500px;
+    position: relative;
+}
+
+.price-details h6{
+    padding: 3% 2%;
+}
+
+.produk span{
+    color: #88BEF5;
+    font-family: 'Asap';
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#333;
+    color:#fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:var(--pink);
+}
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.products .box-container .box{
+    height: 100px;
+    width: 85%;
+    flex:1 1 30rem;
+    border-radius: .0rem;
+    border:.1rem solid rgba(255, 255, 255, 0.1);
+    position: relative;    
+}
+
+.products .box-container .box .discount{
+    position: absolute;
+    top:1rem; left:1rem;
+    padding:.7rem 1rem;
+    font-size: 2rem;
+    color:var(--pink);
+    background:rgba(255, 51, 153,.05);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.products .box-container .box .kotak{
+    top: 230px;
+    left: 10px;
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    border:.1rem solid rgba(255, 255, 255, 0.1);
+    position: absolute;  
+}
+
+.products .box-container .box .kotak .gambar{
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.products .box-container .box .kotak .gambar1{
+    top: 0px;
+    left: 300px;
+    position: absolute;
+   
+}
+
+
+
+.products .box-container .box .kotak .gambar2{
+    top: 0px;
+    left: 550px;
+    position: absolute;
+    
+   
+}
+
+.products .box-container .box .kotak .gambar3{
+    top: 0px;
+    left: 800px;
+    position: absolute;
+    
+   
+}
+.products .box-container .box .kotak .gambar .icons1{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+    height: 5rem;
+    line-height: 10px;
+    font-size: 2rem;
+    width:200px;
+    background:var(--pink);
+    color:#fff;
+    top: 0px;
+}
+
+.products .box-container .box .kotak .gambar1 .icons2{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+    height: 5rem;
+    line-height: 10px;
+    font-size: 2rem;
+    width:200px;
+    background:var(--pink);
+    color:#fff;
+    top: 20px;
+}
+
+.products .box-container .box .kotak .gambar2 .icons3{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+    height: 5rem;
+    line-height: 10px;
+    font-size: 2rem;
+    width:200px;
+    background:var(--pink);
+    color:#fff;
+    top: 35px;
+}
+
+.products .box-container .box .kotak .gambar3 .icons4{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+    height: 5rem;
+    line-height: 10px;
+    font-size: 2rem;
+    width:200px;
+    background:var(--pink);
+    color:#fff;
+    top: 15px;
+
+}
+
+.products .box-container .box .content1 {
+    padding:1rem;
+    text-align: center;
+    
+}
+
+.products .box-container .box .content2 {
+    padding:3rem;
+    text-align: center;
+   
+    
+  
+    
+}
+
+.products .box-container .box .content3 {
+    padding:4rem;
+    text-align: center;
+    top: 215px;
+    position: absolute;
+    right: 1px;
+    left: 2px;
+}
+
+.products .box-container .box .content4 {
+    padding:2rem;
+    text-align: center;
+    
+}
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.products .box-container .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    border:.1rem solid rgba(255, 255, 255, 0.1);
+    position: relative;    
+}
+
+.products .box-container .box .discount{
+    position: absolute;
+    top:1rem; left:1rem;
+    padding:.7rem 1rem;
+    font-size: 2rem;
+    color:var(--pink);
+    background:rgba(255, 51, 153,.05);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.products .box-container .box .content{
+    padding:2rem;
+    text-align: center;
+}
+
+.products .box-container .box .content h3{
+    font-size: 2.5rem;
+    color:#333;
+}
+
+.products .box-container .box .content .price{
+    font-size: 2.5rem;
+    color:var(--pink);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color:#999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.products .box-container .box .image{
+    position: absolute;
+    text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+}
+
+.products .box-container .box .user img{
+    height:10rem;
+    width:10rem;
+    top: 0px;
+    left: 15px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+
+}
+
+.products .box-container .box .user1 img{
+    height:10rem;
+    width:10rem;
+    top: 0px;
+    left: 14.61%;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+
+}
+
+.products .box-container .box .user2 img{
+    height:10rem;
+    width:10rem;
+    top: 0px;
+    left: 29.71%;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+
+}
+
+.products .box-container .box .user3 img{
+    height:10rem;
+    width:10rem;
+    top: 0px;
+    left: 44.82%;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+
+}
+
+.products .box-container .box .user4 img{
+    height:10rem;
+    width:10rem;
+    top: 0px;
+    left: 59.92%;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+
+}
+
+.products .box-container .box .user5 img{
+    height:10rem;
+    width:10rem;
+    top: 0px;
+    left: 75.02%;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+
+}
+
+.products .box-container .box .user6 img{
+    height:10rem;
+    width:10rem;
+    top: 0px;
+    left: 90.13%;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+
+}
+
+.products .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.products .box-container .box .image .icons{
+    position: absolute;
+    bottom:-7rem; left:0; right:0;
+    display: flex;
+}
+
+.products .box-container .box:hover .image .icons{
+    bottom:0;
+}
+
+.products .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width:50%;
+    background:var(--pink);
+    color:#fff;
+}
+
+.products .box-container .box .image .icons .cart-btn{
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width:100%;
+}
+
+.products .box-container .box .image .icons a:hover{
+    background:#333;
+}
+
+.products .box-container .box .content{
+    padding:2rem;
+    text-align: center;
+}
+
+.products .box-container .box .content h3{
+    font-size: 2.5rem;
+    color:#333;
+}
+
+.products .box-container .box .content .price{
+    font-size: 2.5rem;
+    color:var(--pink);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color:#999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+/* media queries  */
+@media (max-width:991px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        background:#fff;
+        border:.1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+
+    .icons-container .icons h3{
+        font-size: 2rem;
+    }
+    
+    .icons-container .icons span{
+        font-size: 1.7rem;
+    }
+    
+}
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+}

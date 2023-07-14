@@ -1,0 +1,32 @@
+
+  
+  .star-rating input {
+    display: none;
+  }
+  
+  .star-rating {
+    margin: 50px auto;
+    display: table;
+    width: 230px;
+    
+  }
+  
+  .star-rating label {
+    padding: 3px;
+    float: right;
+    font-size: 16px;
+    color: #eee;
+    position: relative;
+    top: 305px;
+    left: -165px;
+   
+  }
+  
+  .star-rating input:not(:checked)~label:hover,
+  .star-rating input:not(:checked)~label:hover~label {
+    color: #c5c5c5;
+  }
+  .star-rating input[type="radio"]:checked ~label  
+    {
+    color: rgb(223, 66, 126)!important;
+  }
